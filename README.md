@@ -26,10 +26,6 @@ A responsive personal portfolio website built using **HTML**, **Tailwind CSS**, 
 3. Open `index.html` in your browser
 4. Click `Download CV` to download the file
 
-## 🚀 Live Preview (optional)
-
-[Your live site link here – e.g., GitHub Pages, Vercel, Netlify]
-
 ## 🔗 Contact
 
 - 📧 [saadcfi4@gmail.com](mailto:saadcfi4@gmail.com)
