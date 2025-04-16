@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", sans-serif !important;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Desktop navbar -->
+    <nav class="hidden md:p-8 md:flex md:justify-between md:items-center">
+      <div class="left text-3xl">
+        <a href="/">
+          <h1>Saad Hussain</h1>
+        </a>
+      </div>
+      <div class="right">
+        <ul class="flex gap-10 text-lg">
+          <li class="font-semibold">
+            <a href="https://github.com/saadhn4"> Projects </a>
+          </li>
+          <li class="font-semibold">
+            <a href="mailto:saadcfi4@gmail.com"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar for mobile -->
+    <nav class="md:hidden p-5 flex justify-between">
+      <div class="left text-3xl">
+        <a href="/">
+          <h1>Saad</h1>
+        </a>
+      </div>
+      <div class="hamburger right text-2xl cursor-pointer relative">
+        ☰
+        <div
+          class="tooltip mobile-links absolute right-1 bg-white p-4 text-lg rounded opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out"
+        >
+          <a class="block mb-2" href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <main class="h-[90vh] px-6 grid grid-cols-1 md:grid-cols-3">
+      <div
+        class="left flex justify-center md:justify-end items-center md:col-span-1"
+      >
+        <img
+          src="https://avatars.githubusercontent.com/u/185320182?v=4"
+          alt="hero-pic"
+          class="rounded-full h-75"
+        />
+      </div>
+      <div
+        class="right flex flex-col justify-start md:justify-center items-center text-center md:col-span-2"
+      >
+        <h1 class="text-sm">Hello, I'm</h1>
+        <p class="md:text-5xl text-3xl md:mb-4 md:mt-2 mb-2">Saad Hussain</p>
+        <p class="text-gray-700 font-bold">Aspiring Full-Stack Developer</p>
+        <div class="mt-7">
+          <a
+            href="./Revised Resume.pdf"
+            class="border p-3 rounded-full font-bold mr-3 cursor-pointer"
+          >
+            Download CV
+          </a>
+          <a
+            href="mailto:saadcfi4@gmail,com"
+            class="bg-gray-700 text-white font-bold p-3 rounded-full cursor-pointer"
+          >
+            Contact
+          </a>
+        </div>
+        <div class="mt-9">
+          <a href="https://github.com/saadhn4" target="_blank" class="mr-4">
+            <i class="bi bi-github text-3xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/saadhussain04/" target="_blank">
+            <i class="bi bi-linkedin text-3xl"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const tooltip = document.querySelector(".tooltip");
+
+      hamburger.addEventListener("click", () => {
+        tooltip.classList.toggle("opacity-0");
+        tooltip.classList.toggle("scale-95");
+        tooltip.classList.toggle("pointer-events-none");
+      });
+    </script>
+  </body>
+</html>
